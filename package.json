@@ -25,6 +25,6 @@
     "start": "gulp --watch",
     "test": "gulp dist",
     "deploy": "GH_OWNER=cssnext GH_PROJECT_NAME=cssnext.github.io gulp deploy --production",
-    "travis": "if [ \"$TRAVIS_PULL_REQUEST\" != \"false\" ] || [ \"$TRAVIS_BRANCH\" != \"src\" ]; then npm run test; else npm run deploy; fi;"
+    "travis": "if [ \"$TRAVIS_PULL_REQUEST\" != \"false\" ] || [ \"$TRAVIS_BRANCH\" != \"source\" ]; then npm run test; else npm run deploy; fi;"
   }
 }
