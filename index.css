@@ -1,0 +1,1441 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*
+ * Using html & * inherit make it simpler default behavior on a standalone part
+ */
+
+.r-Defaults {
+  /*
+   * box model like it should be
+   *
+   * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+   */
+  box-sizing: border-box;
+
+  /*
+   * tables borders like they should be
+   * applied to * to also works for display: table;
+   */
+  border-collapse: collapse;
+}
+
+/*
+ * Why inherit ?
+ * If you have a component and his children not using border-box for example:
+ *
+ * Without inherit you might need
+ * .Component, .Component * { box-sizing: content-box }
+ *
+ * With inherit you can just write
+ * .Component { box-sizing: content-box }
+ *
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+.r-Defaults *,
+.r-Defaults *:before,
+.r-Defaults *:after {
+  box-sizing: inherit;
+}
+
+.r-Defaults * { border-collapse: inherit; }
+
+/*
+ * Repeating the background mostly makes sense in the <body>. Otherwise, people
+ * usually want the image and preferably its center (not the top-right corner)
+ */
+
+.r-Defaults *:not(body) {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+/*
+ * Makes the hidden attribute works even when an element is styled display: flex
+ * http://lists.w3.org/Archives/Public/public-whatwg-archive/2014May/0001.html
+ */
+
+.r-Defaults [hidden] { display: none !important; }
+
+/*
+ * kill document defaults margin & padding. We all do that all the times, right ?
+ */
+
+.r-Defaults,
+.r-Defaults body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Vertical rhythm
+ *
+ * http://www.smashingmagazine.com/2012/12/17/css-baseline-the-good-the-bad-and-the-ugly/
+ * https://medium.com/typography/e258fce47a9b
+ * http://csswizardry.com/2012/06/single-direction-margin-declarations/
+ *
+ * What is font-size, line-height & cap-height ?
+ * https://d262ilb51hltx0.cloudfront.net/max/800/1*g7Lpl9hrmuSHxOCqMG9Tjg.png
+ *
+ *
+ * The_Mathematics_of_Music_and_Harmonics.pdf
+ n 2n/12
+ 0 1.000
+ 1 1.059
+ 2 1.122
+ 3 Minor Third 1.189 (1.200)
+ 4 Major Third 1.260 (1.250)
+ 5 Perfect Fourth 1.335 (1.333)
+ 6 1.414
+ 7 Perfect Fifth 1.498 (1.500)
+ 8 1.587
+ 9 1.682
+ 10 1.782
+ 11 1.888
+ 12 2.000
+ *
+ */
+
+/* choose your ratio, then import this file */
+
+/*eg: @import "./cssrecipes-vertical-rhthym/lib/ratio/minor-third.css";*/
+
+:root {
+  /* possible override */
+  /*--r-fontSizeRatio: 1;*/
+  /*--r-lineHeight: calc(--r-fontSize * 1.5);*/
+
+  /* recommanded override (depend on your font) */
+  /*--r-capHeight: X; */
+}
+
+.r-VerticalRhythm {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+}
+
+.r-VerticalRhythm h1,
+.r-VerticalRhythm .h1,
+.r-VerticalRhythm h2,
+.r-VerticalRhythm .h2,
+.r-VerticalRhythm h3,
+.r-VerticalRhythm .h3,
+.r-VerticalRhythm h4,
+.r-VerticalRhythm .h4,
+.r-VerticalRhythm h5,
+.r-VerticalRhythm .h5,
+.r-VerticalRhythm h6,
+.r-VerticalRhythm .h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Heading 1
+ *
+ * <h1>Heading 1</h1>
+ * <div class="h1">Heading 1</div>
+ */
+
+.r-VerticalRhythm h1,
+.r-VerticalRhythm .h1 {
+  font-size: 2.0736rem;
+  line-height: 3.125rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/**
+ * Heading 2
+ *
+ * <h2>Heading 2</h2>
+ * <div class="h2">Heading 2</div>
+ */
+
+.r-VerticalRhythm h2,
+.r-VerticalRhythm .h2 {
+  font-size: 1.728rem;
+  line-height: 1.5625rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/**
+ * Heading 3
+ *
+ * <h3>Heading 3</h3>
+ * <div class="h3">Heading 3</div>
+ */
+
+.r-VerticalRhythm h3,
+.r-VerticalRhythm .h3 {
+  font-size: 1.44rem;
+  line-height: 1.5625rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/**
+ * Heading 4
+ *
+ * <h4>Heading 4</h4>
+ * <div class="h4">Heading 4</div>
+ */
+
+.r-VerticalRhythm h4,
+.r-VerticalRhythm .h4 {
+  font-size: 1.2rem;
+  line-height: 1.5625rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/**
+ * Heading 5
+ *
+ * <h5>Heading 5</h5>
+ * <div class="h5">Heading 5</div>
+ */
+
+.r-VerticalRhythm h5,
+.r-VerticalRhythm .h5 {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/**
+ * Heading 6
+ *
+ * <h6>Heading 6</h6>
+ * <div class="h6">Heading 6</div>
+ */
+
+.r-VerticalRhythm h6,
+.r-VerticalRhythm .h6 {
+  font-size: 0.8333333333333334rem;
+  line-height: 1.5625rem;
+  padding-top: 0.40625rem;
+  margin-bottom: 1.15625rem;
+}
+
+/* since h5 & h6 always small, it's interesting to have a difference with classic text */
+
+.r-VerticalRhythm h5,
+.r-VerticalRhythm .h5
+.r-VerticalRhythm h6,
+.r-VerticalRhythm .h6 { text-decoration: underline }
+
+/**
+ * Small
+ *
+ * <small>small</small>
+ * <small><small>smaller</small></small>
+ */
+
+.r-VerticalRhythm small { font-size: 0.8333333333333334em}
+
+/* misc, really */
+
+.r-VerticalRhythm ul,
+.r-VerticalRhythm ol,
+.r-VerticalRhythm dl,
+.r-VerticalRhythm p,
+.r-VerticalRhythm figure,
+.r-VerticalRhythm pre,
+.r-VerticalRhythm table,
+.r-VerticalRhythm fieldset,
+.r-VerticalRhythm hr {
+  margin: 0 0 1.5625rem;
+}
+
+/* vertical rhythm helper */
+
+.r-VerticalRhythm-helper {
+  position: relative;
+  overflow: auto;
+}
+
+.r-VerticalRhythm-helper:after {
+  content: "";
+  z-index: 100000; /* should be enough right ?*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 1px, transparent 1px) 0 0 / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.16749999999999998), transparent 1px) 0 0.78125rem / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 0.390625rem / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 1.171875rem / 100% 1.5625rem;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 1px, transparent 1px) 0 0 / 100% 1.5625rem,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.16749999999999998), transparent 1px) 0 0.78125rem / 100% 1.5625rem,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 0.390625rem / 100% 1.5625rem,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 1.171875rem / 100% 1.5625rem;
+}
+:root { /* minor third ratio */ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/
+
+  /* not rem so you can use .small in .small */
+}
+.r-all--1of12 {
+  width: 8.33333%;
+}
+.r-all--1of10 {
+  width: 10%;
+}
+.r-all--1of8 {
+  width: 12.5%;
+}
+.r-all--1of6,
+.r-all--2of12 {
+  width: 16.66667%;
+}
+.r-all--1of5,
+.r-all--2of10 {
+  width: 20%;
+}
+.r-all--1of4,
+.r-all--2of8,
+.r-all--3of12 {
+  width: 25%;
+}
+.r-all--3of10 {
+  width: 30%;
+}
+.r-all--1of3,
+.r-all--2of6,
+.r-all--4of12 {
+  width: 33.33333%;
+}
+.r-all--3of8 {
+  width: 37.5%;
+}
+.r-all--2of5,
+.r-all--4of10 {
+  width: 40%;
+}
+.r-all--5of12 {
+  width: 41.66667%;
+}
+.r-all--1of2,
+.r-all--2of4,
+.r-all--3of6,
+.r-all--4of8,
+.r-all--5of10,
+.r-all--6of12 {
+  width: 50%;
+}
+.r-all--7of12 {
+  width: 58.33333%;
+}
+.r-all--3of5,
+.r-all--6of10 {
+  width: 60%;
+}
+.r-all--5of8 {
+  width: 62.5%;
+}
+.r-all--2of3,
+.r-all--4of6,
+.r-all--8of12 {
+  width: 66.66667%;
+}
+.r-all--7of10 {
+  width: 70%;
+}
+.r-all--3of4,
+.r-all--6of8,
+.r-all--9of12 {
+  width: 75%;
+}
+.r-all--4of5,
+.r-all--8of10 {
+  width: 80%;
+}
+.r-all--5of6,
+.r-all--10of12 {
+  width: 83.33333%;
+}
+.r-all--7of8 {
+  width: 87.5%;
+}
+.r-all--9of10 {
+  width: 90%;
+}
+.r-all--11of12 {
+  width: 91.66667%;
+}
+.r-all--1of1,
+.r-all--2of2,
+.r-all--3of3,
+.r-all--4of4,
+.r-all--5of5,
+.r-all--6of6,
+.r-all--8of8,
+.r-all--10of10,
+.r-all--12of12 {
+  width: 100%;
+}
+@media (min-width: 30.01em) {
+
+  .r-minS--1of12 {
+    width: 8.33333%;
+  }
+
+  .r-minS--1of10 {
+    width: 10%;
+  }
+
+  .r-minS--1of8 {
+    width: 12.5%;
+  }
+
+  .r-minS--1of6,
+  .r-minS--2of12 {
+    width: 16.66667%;
+  }
+
+  .r-minS--1of5,
+  .r-minS--2of10 {
+    width: 20%;
+  }
+
+  .r-minS--1of4,
+  .r-minS--2of8,
+  .r-minS--3of12 {
+    width: 25%;
+  }
+
+  .r-minS--3of10 {
+    width: 30%;
+  }
+
+  .r-minS--1of3,
+  .r-minS--2of6,
+  .r-minS--4of12 {
+    width: 33.33333%;
+  }
+
+  .r-minS--3of8 {
+    width: 37.5%;
+  }
+
+  .r-minS--2of5,
+  .r-minS--4of10 {
+    width: 40%;
+  }
+
+  .r-minS--5of12 {
+    width: 41.66667%;
+  }
+
+  .r-minS--1of2,
+  .r-minS--2of4,
+  .r-minS--3of6,
+  .r-minS--4of8,
+  .r-minS--5of10,
+  .r-minS--6of12 {
+    width: 50%;
+  }
+
+  .r-minS--7of12 {
+    width: 58.33333%;
+  }
+
+  .r-minS--3of5,
+  .r-minS--6of10 {
+    width: 60%;
+  }
+
+  .r-minS--5of8 {
+    width: 62.5%;
+  }
+
+  .r-minS--2of3,
+  .r-minS--4of6,
+  .r-minS--8of12 {
+    width: 66.66667%;
+  }
+
+  .r-minS--7of10 {
+    width: 70%;
+  }
+
+  .r-minS--3of4,
+  .r-minS--6of8,
+  .r-minS--9of12 {
+    width: 75%;
+  }
+
+  .r-minS--4of5,
+  .r-minS--8of10 {
+    width: 80%;
+  }
+
+  .r-minS--5of6,
+  .r-minS--10of12 {
+    width: 83.33333%;
+  }
+
+  .r-minS--7of8 {
+    width: 87.5%;
+  }
+
+  .r-minS--9of10 {
+    width: 90%;
+  }
+
+  .r-minS--11of12 {
+    width: 91.66667%;
+  }
+
+  .r-minS--1of1,
+  .r-minS--2of2,
+  .r-minS--3of3,
+  .r-minS--4of4,
+  .r-minS--5of5,
+  .r-minS--6of6,
+  .r-minS--8of8,
+  .r-minS--10of10,
+  .r-minS--12of12 {
+    width: 100%;
+  }
+
+}
+@media (min-width: 50.01em) {
+
+  .r-minM--1of12 {
+    width: 8.33333%;
+  }
+
+  .r-minM--1of10 {
+    width: 10%;
+  }
+
+  .r-minM--1of8 {
+    width: 12.5%;
+  }
+
+  .r-minM--1of6,
+  .r-minM--2of12 {
+    width: 16.66667%;
+  }
+
+  .r-minM--1of5,
+  .r-minM--2of10 {
+    width: 20%;
+  }
+
+  .r-minM--1of4,
+  .r-minM--2of8,
+  .r-minM--3of12 {
+    width: 25%;
+  }
+
+  .r-minM--3of10 {
+    width: 30%;
+  }
+
+  .r-minM--1of3,
+  .r-minM--2of6,
+  .r-minM--4of12 {
+    width: 33.33333%;
+  }
+
+  .r-minM--3of8 {
+    width: 37.5%;
+  }
+
+  .r-minM--2of5,
+  .r-minM--4of10 {
+    width: 40%;
+  }
+
+  .r-minM--5of12 {
+    width: 41.66667%;
+  }
+
+  .r-minM--1of2,
+  .r-minM--2of4,
+  .r-minM--3of6,
+  .r-minM--4of8,
+  .r-minM--5of10,
+  .r-minM--6of12 {
+    width: 50%;
+  }
+
+  .r-minM--7of12 {
+    width: 58.33333%;
+  }
+
+  .r-minM--3of5,
+  .r-minM--6of10 {
+    width: 60%;
+  }
+
+  .r-minM--5of8 {
+    width: 62.5%;
+  }
+
+  .r-minM--2of3,
+  .r-minM--4of6,
+  .r-minM--8of12 {
+    width: 66.66667%;
+  }
+
+  .r-minM--7of10 {
+    width: 70%;
+  }
+
+  .r-minM--3of4,
+  .r-minM--6of8,
+  .r-minM--9of12 {
+    width: 75%;
+  }
+
+  .r-minM--4of5,
+  .r-minM--8of10 {
+    width: 80%;
+  }
+
+  .r-minM--5of6,
+  .r-minM--10of12 {
+    width: 83.33333%;
+  }
+
+  .r-minM--7of8 {
+    width: 87.5%;
+  }
+
+  .r-minM--9of10 {
+    width: 90%;
+  }
+
+  .r-minM--11of12 {
+    width: 91.66667%;
+  }
+
+  .r-minM--1of1,
+  .r-minM--2of2,
+  .r-minM--3of3,
+  .r-minM--4of4,
+  .r-minM--5of5,
+  .r-minM--6of6,
+  .r-minM--8of8,
+  .r-minM--10of10,
+  .r-minM--12of12 {
+    width: 100%;
+  }
+
+}
+@media (min-width: 65.01em) {
+
+  .r-minL--1of12 {
+    width: 8.33333%;
+  }
+
+  .r-minL--1of10 {
+    width: 10%;
+  }
+
+  .r-minL--1of8 {
+    width: 12.5%;
+  }
+
+  .r-minL--1of6,
+  .r-minL--2of12 {
+    width: 16.66667%;
+  }
+
+  .r-minL--1of5,
+  .r-minL--2of10 {
+    width: 20%;
+  }
+
+  .r-minL--1of4,
+  .r-minL--2of8,
+  .r-minL--3of12 {
+    width: 25%;
+  }
+
+  .r-minL--3of10 {
+    width: 30%;
+  }
+
+  .r-minL--1of3,
+  .r-minL--2of6,
+  .r-minL--4of12 {
+    width: 33.33333%;
+  }
+
+  .r-minL--3of8 {
+    width: 37.5%;
+  }
+
+  .r-minL--2of5,
+  .r-minL--4of10 {
+    width: 40%;
+  }
+
+  .r-minL--5of12 {
+    width: 41.66667%;
+  }
+
+  .r-minL--1of2,
+  .r-minL--2of4,
+  .r-minL--3of6,
+  .r-minL--4of8,
+  .r-minL--5of10,
+  .r-minL--6of12 {
+    width: 50%;
+  }
+
+  .r-minL--7of12 {
+    width: 58.33333%;
+  }
+
+  .r-minL--3of5,
+  .r-minL--6of10 {
+    width: 60%;
+  }
+
+  .r-minL--5of8 {
+    width: 62.5%;
+  }
+
+  .r-minL--2of3,
+  .r-minL--4of6,
+  .r-minL--8of12 {
+    width: 66.66667%;
+  }
+
+  .r-minL--7of10 {
+    width: 70%;
+  }
+
+  .r-minL--3of4,
+  .r-minL--6of8,
+  .r-minL--9of12 {
+    width: 75%;
+  }
+
+  .r-minL--4of5,
+  .r-minL--8of10 {
+    width: 80%;
+  }
+
+  .r-minL--5of6,
+  .r-minL--10of12 {
+    width: 83.33333%;
+  }
+
+  .r-minL--7of8 {
+    width: 87.5%;
+  }
+
+  .r-minL--9of10 {
+    width: 90%;
+  }
+
+  .r-minL--11of12 {
+    width: 91.66667%;
+  }
+
+  .r-minL--1of1,
+  .r-minL--2of2,
+  .r-minL--3of3,
+  .r-minL--4of4,
+  .r-minL--5of5,
+  .r-minL--6of6,
+  .r-minL--8of8,
+  .r-minL--10of10,
+  .r-minL--12of12 {
+    width: 100%;
+  }
+
+}
+@media (min-width: 80.01em) {
+
+  .r-minXL--1of12 {
+    width: 8.33333%;
+  }
+
+  .r-minXL--1of10 {
+    width: 10%;
+  }
+
+  .r-minXL--1of8 {
+    width: 12.5%;
+  }
+
+  .r-minXL--1of6,
+  .r-minXL--2of12 {
+    width: 16.66667%;
+  }
+
+  .r-minXL--1of5,
+  .r-minXL--2of10 {
+    width: 20%;
+  }
+
+  .r-minXL--1of4,
+  .r-minXL--2of8,
+  .r-minXL--3of12 {
+    width: 25%;
+  }
+
+  .r-minXL--3of10 {
+    width: 30%;
+  }
+
+  .r-minXL--1of3,
+  .r-minXL--2of6,
+  .r-minXL--4of12 {
+    width: 33.33333%;
+  }
+
+  .r-minXL--3of8 {
+    width: 37.5%;
+  }
+
+  .r-minXL--2of5,
+  .r-minXL--4of10 {
+    width: 40%;
+  }
+
+  .r-minXL--5of12 {
+    width: 41.66667%;
+  }
+
+  .r-minXL--1of2,
+  .r-minXL--2of4,
+  .r-minXL--3of6,
+  .r-minXL--4of8,
+  .r-minXL--5of10,
+  .r-minXL--6of12 {
+    width: 50%;
+  }
+
+  .r-minXL--7of12 {
+    width: 58.33333%;
+  }
+
+  .r-minXL--3of5,
+  .r-minXL--6of10 {
+    width: 60%;
+  }
+
+  .r-minXL--5of8 {
+    width: 62.5%;
+  }
+
+  .r-minXL--2of3,
+  .r-minXL--4of6,
+  .r-minXL--8of12 {
+    width: 66.66667%;
+  }
+
+  .r-minXL--7of10 {
+    width: 70%;
+  }
+
+  .r-minXL--3of4,
+  .r-minXL--6of8,
+  .r-minXL--9of12 {
+    width: 75%;
+  }
+
+  .r-minXL--4of5,
+  .r-minXL--8of10 {
+    width: 80%;
+  }
+
+  .r-minXL--5of6,
+  .r-minXL--10of12 {
+    width: 83.33333%;
+  }
+
+  .r-minXL--7of8 {
+    width: 87.5%;
+  }
+
+  .r-minXL--9of10 {
+    width: 90%;
+  }
+
+  .r-minXL--11of12 {
+    width: 91.66667%;
+  }
+
+  .r-minXL--1of1,
+  .r-minXL--2of2,
+  .r-minXL--3of3,
+  .r-minXL--4of4,
+  .r-minXL--5of5,
+  .r-minXL--6of6,
+  .r-minXL--8of8,
+  .r-minXL--10of10,
+  .r-minXL--12of12 {
+    width: 100%;
+  }
+
+}
+.r-Grid {
+  display: block;
+  font-size: 0; /* whitespace control */
+  padding: 0;
+  margin: 0;
+}
+/* Modifier --withGutter */
+.r-Grid--withGutter { margin: 0 -0.5rem }
+.r-Grid--withGutter > .r-Grid-cell { padding: 0 0.5rem }
+.r-Grid-cell {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+.r-Grid-cell--alignTop {vertical-align: top }
+.r-Grid-cell--alignMiddle {vertical-align: middle }
+.r-Grid-cell--alignBottom {vertical-align: bottom }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #f1f1f1
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Avenir Next, Calibri, Calibri Light, Segoe UI, Segoe UI Light, Myanmar Text, sans-serif;
+}
+
+a,
+a:visited {
+  color: currentColor !important;
+  position: relative;
+  text-decoration: none;
+}
+
+  a::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: currentColor;
+    opacity: .25;
+
+    -webkit-transform: scaleX(.85) translateY(.3rem);
+
+        -ms-transform: scaleX(.85) translateY(.3rem);
+
+            transform: scaleX(.85) translateY(.3rem);
+    -webkit-transition: .2s;
+            transition: .2s;
+  }
+  a:hover::before {
+    opacity: 0.75;
+    -webkit-transform: scaleX(.95) translateY(.1rem);
+        -ms-transform: scaleX(.95) translateY(.1rem);
+            transform: scaleX(.95) translateY(.1rem);
+  }
+  a:active::before {
+    opacity: .2;
+  }
+
+.r-Grid {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+  @media (min-width: 50.01em) { .r-Grid {
+    width: 40rem;
+    padding: 0;
+  }}
+  @media (min-width: 65.01em) { .r-Grid { width: 55rem } }
+  @media (min-width: 80.01em) { .r-Grid { width: 70rem } }
+
+.cssnext-Light {
+  color: #fff;
+  font-weight: 300;
+}
+
+  .cssnext-Light a { color: #fff !important }
+  .cssnext-Light a::before { background: #f1f1f1 }
+
+.cssnext-Header {
+  overflow: auto;
+  /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+
+  .cssnext-Logo {
+    line-height: 4.6875rem;
+  }
+    .cssnext-Logo-img {
+      height: 2.34375rem;
+      width: auto;
+      fill: currentColor;
+      vertical-align: middle;
+    }
+
+.cssnext-Promo {
+  overflow: auto;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+  /*background: linear-gradient(160deg, #b01f24, #fedd00), url("./img/promo.jg");*/
+  /*background: linear-gradient(160deg, #318EDF, #8053ca), url("./img/promo.jg");*/
+  /*background: linear-gradient(160deg, rgba(178, 30, 42, 0.9), rgba(255, 217, 0, 0.9)), url("./img/promo.jpg") no-repeat 50% 50%/cover;*/
+
+  .cssnext-Promo--time { background: -webkit-linear-gradient(290deg, rgba(49, 155, 226, 0.9), rgba(124, 84, 204, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 155, 226, 0.9), rgba(124, 84, 204, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover }
+
+  .cssnext-Promo-baseline {
+    display: block;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin: 6rem auto;
+    text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.4);
+  }
+
+.cssnext-Footer {
+  font-size: 0.8333333333333334em;
+  text-align: center;
+  padding-top: 1rem;
+}
