@@ -6,9 +6,9 @@
 @import "../node_modules/cssrecipes-vertical-rhythm/lib/ratio/minor-third.css";
 
 @import "../node_modules/cssrecipes-custom-media-queries/index.css";
+@import "../node_modules/cssrecipes-grid/index.css";
 @import "../node_modules/cssrecipes-utils/lib/all.css";
 @import "../node_modules/cssrecipes-utils/lib/min.css";
-@import "../node_modules/cssrecipes-grid/index.css";
 
 html {
   height: 100%;
