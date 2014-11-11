@@ -1,0 +1,17 @@
+language: node_js
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#cssnext"
+    on_success: change
+    on_failure: always
+    use_notice: true
+    skip_join: true
+
+script:
+  - npm run travis
+
+env:
+  global:
+    - secure: pj+iHgVj/WLvzyz1GK6ntBNijIxm1G46Wq+tkW6RZMHXRM/mwUZCPgkQnqzcgEdjpZ9qb13OzTZuqDGseteiONupNM46tMU6u18XrUKYsoxe5mHr/P3LsCrlOZDeNam3FBbgG6q/SBoMkTtuwijsoEE/G1MjOYjF60M1cSmWeHI=
