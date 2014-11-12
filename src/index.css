@@ -10,6 +10,15 @@
 @import "../node_modules/cssrecipes-utils/lib/all.css";
 @import "../node_modules/cssrecipes-utils/lib/min.css";
 
+:root {
+  --cssnext-Color-blue: #318edf;
+  --cssnext-Color-purple: #8053ca;
+}
+
+/**
+ * generic typography
+ */
+
 html {
   height: 100%;
   margin: 0;
@@ -55,6 +64,16 @@ a:visited {
     opacity: .2;
   }
 
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+/**
+ * customise recipes
+ */
+
 .r-Grid {
   width: auto;
   margin: 0 auto;
@@ -65,16 +84,12 @@ a:visited {
     padding: 0;
   }}
   @media (--r-minL) { .r-Grid { width: 55rem } }
-  @media (--r-minXL) { .r-Grid { width: 70rem } }
+  /*@media (--r-minXL) { .r-Grid { width: 70rem } }*/
 
-.cssnext-Light {
-  color: #fff;
-  font-weight: 300;
-}
 
-  .cssnext-Light a { color: #fff !important }
-  .cssnext-Light a::before { background: #f1f1f1 }
-
+/**
+ * cssnext stuff
+ */
 .cssnext-Header {
   overflow: auto;
   /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -91,19 +106,23 @@ a:visited {
       vertical-align: middle;
     }
 
-.cssnext-Promo {
+.cssnext-Jumbotron {
   overflow: auto;
   padding: 6rem 0;
-  text-align: center;
 }
 
-  /*background: linear-gradient(160deg, #b01f24, #fedd00), url("./img/promo.jg");*/
-  /*background: linear-gradient(160deg, #318EDF, #8053ca), url("./img/promo.jg");*/
-  /*background: linear-gradient(160deg, rgba(178, 30, 42, 0.9), rgba(255, 217, 0, 0.9)), url("./img/promo.jpg") no-repeat 50% 50%/cover;*/
+  .cssnext-Jumbotron + :not(.cssnext-Jumbotron) { margin: var(--r-lineHeight) auto }
 
-  .cssnext-Promo--time { background: linear-gradient(160deg, rgba(49, 155, 226, 0.9), rgba(124, 84, 204, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--center { text-align: center }
 
-  .cssnext-Promo-baseline {
+  .cssnext-Jumbotron--time { background: linear-gradient(160deg, color(var(--cssnext-Color-blue) a(.9)), color(var(--cssnext-Color-purple) a(.9))), url("assets/time.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--future { background: linear-gradient(160deg, color(var(--cssnext-Color-purple) a(.8)), color(var(--cssnext-Color-blue) a(.7))), url("assets/future.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--fast { background: linear-gradient(160deg, color(var(--cssnext-Color-blue) l(90%) a(.9)), color(var(--cssnext-Color-purple) l(90%) a(.9))), url("assets/fast.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--flux { background: linear-gradient(160deg, color(var(--cssnext-Color-blue) a(.7)), color(var(--cssnext-Color-purple) a(.9))), url("assets/flux.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--run { background: linear-gradient(160deg, color(var(--cssnext-Color-purple) l(90%) a(.8)), color(var(--cssnext-Color-blue) l(90%) a(.8))), url("assets/run.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--doit { background: linear-gradient(160deg, color(var(--cssnext-Color-blue) a(.7)), color(var(--cssnext-Color-purple) a(.6))), url("assets/doit.jpg") no-repeat 50% 50%/cover }
+
+  .cssnext-Jumbotron-title {
     display: block;
     font-size: 3rem;
     line-height: 3rem;
@@ -112,8 +131,41 @@ a:visited {
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.4);
   }
 
+.cssnext-Section { margin: 0 0 var(--r-lineHeight) }
+
+  .cssnext-Section-title { text-align: center }
+
+  .cssnext-Section-content { text-align: justify }
+
+  .cssnext-Section-highlight {
+    display: block;
+    text-align: center;
+    margin: var(--r-lineHeight);
+  }
+
+  .cssnext-Section-link {
+    text-align: center;
+    font-size: var(--r-small-fontSize);
+    color: var(--cssnext-Color-blue);
+  }
+
+    .cssnext-Section-link:hover { color: var(--cssnext-Color-purple) }
+
 .cssnext-Footer {
   font-size: var(--r-small-fontSize);
   text-align: center;
-  padding-top: 1rem;
+  padding: calc(var(--r-lineHeight) * 3) 0 var(--r-lineHeight);
 }
+
+.cssnext-INeedSpace {
+  margin-top: calc(var(--r-lineHeight) * 2);
+  margin-bottom: calc(var(--r-lineHeight) * 2);
+}
+
+.cssnext-Light {
+  color: #fff;
+  font-weight: 300;
+}
+
+  .cssnext-Light a { color: #fff !important }
+  .cssnext-Light a::before { background: #f1f1f1 }
