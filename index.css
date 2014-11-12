@@ -1363,19 +1363,19 @@ a:visited {
     background: currentColor;
     opacity: .25;
 
-    -webkit-transform: scaleX(.85) translateY(.3rem);
+    -webkit-transform: scaleX(.85) translateY(.1rem);
 
-        -ms-transform: scaleX(.85) translateY(.3rem);
+        -ms-transform: scaleX(.85) translateY(.1rem);
 
-            transform: scaleX(.85) translateY(.3rem);
+            transform: scaleX(.85) translateY(.1rem);
     -webkit-transition: .2s;
             transition: .2s;
   }
   a:hover::before {
     opacity: 0.75;
-    -webkit-transform: scaleX(.95) translateY(.1rem);
-        -ms-transform: scaleX(.95) translateY(.1rem);
-            transform: scaleX(.95) translateY(.1rem);
+    -webkit-transform: scaleX(.95);
+        -ms-transform: scaleX(.95);
+            transform: scaleX(.95);
   }
   a:active::before {
     opacity: .2;
@@ -1448,7 +1448,10 @@ h3 {
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.4);
   }
 
-.cssnext-Section { margin: 0 0 1.5625rem }
+.cssnext-Section {
+  margin: 0 auto 1.5625rem;
+  max-width: 40rem;
+}
 
   .cssnext-Section-title { text-align: center }
 
