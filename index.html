@@ -14,10 +14,10 @@
   </div>
 </header>
 
-<div class="cssnext-Light cssnext-Promo cssnext-Promo--time">
+<div class="cssnext-Jumbotron cssnext-Jumbotron--time cssnext-Jumbotron--center cssnext-Light">
   <section class="r-Grid">
     <div class="r-Grid-cell">
-      <strong class="cssnext-Promo-baseline">Use tomorrow's CSS syntax, today.</strong>
+      <strong class="cssnext-Jumbotron-title">Use tomorrow's CSS syntax, today.</strong>
       <p>
         <a title="github.com/cssnext/cssnext" href="https://github.com/cssnext/cssnext">Check out the project on GitHub</a>
         or <a href="https://cssnext.github.io/cssnext-playground/">try cssnext in the playground</a>
@@ -28,14 +28,187 @@
 
 <section class="r-Grid">
   <div class="r-Grid-cell">
+    <h2 class="cssnext-Section-title">What is cssnext ?</h2>
+    <p class="cssnext-Section-content">
+      This is a CSS transpiler that allows you to use tomorrow's CSS syntax today.
+      It transforms CSS specs that are not already implemented in popular browsers into more compatible CSS.
 
+      <strong class="cssnext-Section-highlight">You should understand that you can code directly into CSS4+ that will be transformed to CSS3.</strong>
+
+      This is not a classic CSS preprocessor, but can replace one.
+      You can use variables (by using custom properties syntax, limite to top-level :root) with math.
+      You can create custom media queries for a more maintenable responsive CSS that works on the devices you specify.
+      You can do some crazy color manipulations with all the new color functions and available modifiers.
+      You can also forget vendor prefixes.
+      There is also some others stuff included and others that will be, when the specifications will evolve.
+
+      <em class="cssnext-Section-highlight">You can basically write future-proof code today and forget old preprocessor specific syntax.</em>
+    </p>
   </div>
 </section>
 
-<div class="r-Grid">
-  <div class="r-Grid-cell">
-    <footer class="cssnext-Footer">
+<section class="r-Grid cssnext-INeedSpace">
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Variables</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="http://www.w3.org/TR/css-variables/">specs</a>
+    </div>
+  </div>
+
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Math</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="http://www.w3.org/TR/css3-values/#calc">specs</a>
+      <a href="https://github.com/MoOx/reduce-css-calc#readme">(and more)</a>
+    </div>
+  </div>
+
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Custom media queries</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="http://dev.w3.org/csswg/mediaqueries/#custom-mq">specs</a>
+    </div>
+  </div>
+
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Color manipulations</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="http://dev.w3.org/csswg/css-color/#modifying-colors">specs</a>
+      <a href="https://github.com/cssnext/cssnext#features">(and more)</a>
+    </div>
+  </div>
+
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Forget prefixes</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="https://github.com/postcss/autoprefixer#readme">thanks to autoprefixer</a>
+    </div>
+  </div>
+
+  <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+    <h2 class="cssnext-Section-title">Even more stuff</h2>
+    <p class="cssnext-Section-content">
+      <!-- Blah blah -->
+    </p>
+    <div class="cssnext-Section-link">
+      <a href="https://github.com/cssnext/cssnext#features">check out features list</a>
+    </div>
+  </div>
+</section>
+
+<section class="r-Grid">
+  <div class="r-Grid-cell cssnext-Section">
+    <h2 class="cssnext-Section-title">Why cssnext ?</h2>
+    <p class="cssnext-Section-content">
+      <!-- It's fast. A lot.
+      Active development
+      Based on NPM ecosystem -->
+    </p>
+  </div>
+</section>
+
+<section class="cssnext-Jumbotron cssnext-Jumbotron--future cssnext-Light">
+  <div class="r-Grid">
+    <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+      <h3 class="cssnext-Section-title">Future-proof code</h3>
+      <p class="cssnext-Section-content">
+        In a near future, browsers will implements new CSS specifications. As time goes, cssnext will remove some transformations that won't be necessary anymore.
+        And maybe one day, you will be able to completly remove cssnext from your workflow without touching your actual CSS.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="cssnext-Jumbotron cssnext-Jumbotron--fast">
+  <div class="r-Grid">
+    <div class="r-Grid-cell r-minM--1of2"></div>
+    <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+      <h3 class="cssnext-Section-title">It's fast. A lot.</h3>
+      <p class="cssnext-Section-content">
+        cssnext use <a href="https://github.com/postcss/postcss">postcss 3</a>
+        which have
+        <a href="https://github.com/postcss/postcss/issues/64#issuecomment-62388908">the fastest css parser</a>.
+        It's faster than rework and so myth. And sass and similar.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="cssnext-Jumbotron cssnext-Jumbotron--flux cssnext-Light">
+  <div class="r-Grid">
+    <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+      <h3 class="cssnext-Section-title">Active development</h3>
+      <p class="cssnext-Section-content">
+        No long wait for release.
+        A bug fixed will be released asap.
+        Minor features will never wait too much.
+
+        <br />
+        See that by yourself on
+        <a href="https://github.com/cssnext/cssnext/graphs/contributors">cssnext</a>
+        &amp;
+        <a href="https://github.com/postcss/postcss/graphs/contributors">postcss</a>.
+        activities graphs.
+
+        <br />
+        cssnext use lots of postcss plugins,
+        <a href="https://github.com/postcss/">so check them too.</a>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="cssnext-Jumbotron cssnext-Jumbotron--run">
+  <div class="r-Grid">
+    <div class="r-Grid-cell r-minM--1of2"></div>
+    <div class="r-Grid-cell r-minM--1of2 cssnext-Section">
+      <h3 class="cssnext-Section-title">Based on NPM ecosystem</h3>
+      <p class="cssnext-Section-content">
+        cssnext uses <a href="https://www.npmjs.org/">npm packages</a> that should respect <a href="http://semver.org/">semver</a>.
+        <br />
+        Bugfixes are pushed often.
+        Minor changes don't break your code.
+        Major releases are, well major and are not supposed to happen a lot.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cssnext-Jumbotron cssnext-Jumbotron--center">
+  <div class="r-Grid">
+    <div class="r-Grid-cell">
       Follow <a href="https://twitter.com/cssnext">@cssnext</a> to get latest news or <a href="irc://irc.freenode.net/cssnext">join #cssnext on irc.freenode.net</a> if you have any questions.
+    </div>
+  </div>
+</section>
+
+<div class="cssnext-Jumbotron cssnext-Jumbotron--doit cssnext-Jumbotron--center cssnext-Light">
+  <section class="r-Grid">
+    <div class="r-Grid-cell">
+      <a href="https://cssnext.github.io/cssnext-playground/" class="cssnext-Jumbotron-title">Try cssnext in your browser now.</a>
+    </div>
+  </section>
+</div>
+
+<div class="r-Grid">
+  <div class="r-Grid-cell cssnext-Section">
+    <footer class="cssnext-Footer">
+      <img src="assets/cssnext.svg" alt="cssnext" style="height: 1rem; vertical-align: middle" /> is brought to you by
+      <a href="https://twitter.com/MoOx">@MoOx</a>
+      &amp;
+      <a href="https://github.com/cssnext/cssnext/graphs/contributors">some others contributors</a>
     </footer>
   </div>
 </div>
