@@ -8,8 +8,13 @@
 <body>
 <header class="cssnext-Header">
   <div class="r-Grid">
-    <div class="r-Grid-cell cssnext-Logo">
+    <div class="r-Grid-cell r-minS--1of2 cssnext-Logo">
       <img class="cssnext-Logo-img" src="assets/cssnext.svg" alt="cssnext"/>
+    </div>
+    <div class="r-Grid-cell r-minS--1of2 cssnext-Nav">
+      <a href="#what">What</a>
+      <a href="#why">Why</a>
+      <a href="#how">How</a>
     </div>
   </div>
 </header>
@@ -26,7 +31,7 @@
   </section>
 </div>
 
-<section class="r-Grid cssnext-Section">
+<section id="what" class="r-Grid cssnext-Section">
   <div class="r-Grid-cell">
     <h2 class="cssnext-Section-title">What is cssnext ?</h2>
     <p class="cssnext-Section-content">
@@ -111,14 +116,9 @@
   </div>
 </section>
 
-<section class="r-Grid cssnext-Section">
+<section id="why" class="r-Grid cssnext-Section">
   <div class="r-Grid-cell">
     <h2 class="cssnext-Section-title">Why cssnext?</h2>
-    <p class="cssnext-Section-content">
-      <!-- It's fast. A lot.
-      Active development
-      Based on NPM ecosystem -->
-    </p>
   </div>
 </section>
 
@@ -142,7 +142,7 @@
         cssnext uses <a href="https://github.com/postcss/postcss">postcss 3</a>
         which has
         <a href="https://github.com/postcss/postcss/releases/tag/3.0.0">the fastest css parser</a>.
-        It's faster than rework (so Myth that use Rework, postcss 2 & Rework again). And it's also faster than Sass and other similar tools.
+        It's faster than rework (so Myth that use Rework, postcss 2 &amp; Rework again). And it's also faster than Sass and other similar tools.
       </p>
     </div>
   </div>
@@ -186,11 +186,35 @@
   </div>
 </section>
 
-<section class="cssnext-Jumbotron cssnext-Jumbotron--center">
-  <div class="r-Grid">
-    <div class="r-Grid-cell">
-      Follow <a href="https://twitter.com/cssnext">@cssnext</a> to get the latest news or <a href="irc://irc.freenode.net/cssnext">join #cssnext on irc.freenode.net</a> if you have any questions.
-    </div>
+<section id="how" class="r-Grid cssnext-Section">
+  <div class="r-Grid-cell cssnext-INeedSpace">
+    <h2 class="cssnext-Section-title">How to use cssnext ?</h2>
+    <p class="cssnext-Section-content">
+      <a href="https://www.npmjs.org/package/cssnext">cssnext is available on npm</a>.
+      The package offers <a href="https://github.com/cssnext/cssnext#cli">a CLI</a> and
+      <a href="https://github.com/cssnext/cssnext#nodejs-api">a Node.js API</a>.
+
+      <pre><code>$ npm install cssnext</code></pre>
+
+      You can get the package by installing it locally or globally (using install <code>-g</code> option).
+
+      <br /><br />
+      You can also just use it in your development workflow using plugins or apps:
+      <br /><br />
+      <div class="cssnext-Tools">
+        <a href="https://github.com/cssnext/grunt-cssnext">grunt</a>
+        ,
+        <a href="https://github.com/cssnext/gulp-cssnext">gulp</a>
+        ,
+        <a href="https://github.com/cssnext/duo-cssnext">duo</a>
+        ,
+        <a href="https://github.com/cssnext/cssnext-brunch">brunch</a>
+        ,
+        <a href="https://github.com/cssnext/broccoli-cssnext">broccoli</a>
+        or in
+        <a href="https://prepros.io/">prepros 5</a>
+      </div>
+    </p>
   </div>
 </section>
 
@@ -199,6 +223,24 @@
     <div class="r-Grid-cell">
       <div class="cssnext-Jumbotron-title">
         <a href="https://cssnext.github.io/cssnext-playground/">Try cssnext in your browser now.</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="cssnext-Jumbotron cssnext-Jumbotron--center">
+  <div class="r-Grid">
+    <div class="r-Grid-cell">
+      Follow <a href="https://twitter.com/cssnext">@cssnext</a> to get the latest news or <a href="irc://irc.freenode.net/cssnext">join #cssnext on irc.freenode.net</a> if you have any questions.
+    </div>
+  </div>
+</section>
+
+<div class="cssnext-Jumbotron cssnext-Jumbotron--mysterious cssnext-Jumbotron--center cssnext-Light">
+  <section class="r-Grid">
+    <div class="r-Grid-cell">
+      <div class="cssnext-Jumbotron-title cssnext-Jumbotron-title--smaller">
+        <a href="https://cssrecipes.github.io/">Check out cssrecipes, components based on cssnext</a>
       </div>
     </div>
   </section>

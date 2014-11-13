@@ -1411,16 +1411,23 @@ h3 {
   overflow: auto;
   /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+  line-height: 4.6875rem;
 }
 
-  .cssnext-Logo {
-    line-height: 4.6875rem;
-  }
+  .cssnext-Logo {}
     .cssnext-Logo-img {
       height: 2.34375rem;
       width: auto;
       fill: currentColor;
       vertical-align: middle;
+    }
+
+  .cssnext-Nav {
+    text-align: right;
+  }
+
+    .cssnext-Nav a {
+      margin: 0 1rem;
     }
 
 .cssnext-Jumbotron {
@@ -1438,15 +1445,21 @@ h3 {
   .cssnext-Jumbotron--flux { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.9)), url("assets/flux.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.9)), url("assets/flux.jpg") no-repeat 50% 50%/cover }
   .cssnext-Jumbotron--run { background: -webkit-linear-gradient(290deg, rgba(226, 216, 243, 0.8), rgba(211, 231, 248, 0.8)), url("assets/run.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(226, 216, 243, 0.8), rgba(211, 231, 248, 0.8)), url("assets/run.jpg") no-repeat 50% 50%/cover }
   .cssnext-Jumbotron--doit { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.6)), url("assets/doit.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.6)), url("assets/doit.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--mysterious { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(70, 195, 64, 0.6)), url("assets/mysterious.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(70, 195, 64, 0.6)), url("assets/mysterious.jpg") no-repeat 50% 50%/cover }
 
   .cssnext-Jumbotron-title {
     display: block;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 3.1104rem;
+    line-height: 4.6875rem;
     font-weight: 400;
     margin: 6rem auto;
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.4);
   }
+
+    .cssnext-Jumbotron-title--smaller {
+      font-size: 2.0736rem;
+      line-height: 3.125rem;
+    }
 
 .cssnext-Section {
   margin: 0 auto 1.5625rem;
@@ -1470,6 +1483,12 @@ h3 {
   }
 
     .cssnext-Section-link:hover { color: #8053ca }
+
+.cssnext-Tools {
+  text-align: center;
+  font-size: 1.44rem;
+  font-weight: 300;
+}
 
 .cssnext-Footer {
   font-size: 0.83333em;
