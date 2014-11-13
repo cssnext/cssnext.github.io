@@ -1411,23 +1411,16 @@ h3 {
   overflow: auto;
   /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
-  line-height: 4.6875rem;
 }
 
-  .cssnext-Logo {}
+  .cssnext-Logo {
+    line-height: 4.6875rem;
+  }
     .cssnext-Logo-img {
       height: 2.34375rem;
       width: auto;
       fill: currentColor;
       vertical-align: middle;
-    }
-
-  .cssnext-Nav {
-    text-align: right;
-  }
-
-    .cssnext-Nav a {
-      margin: 0 1rem;
     }
 
 .cssnext-Jumbotron {
