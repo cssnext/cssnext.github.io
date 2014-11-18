@@ -1430,14 +1430,14 @@ h3 {
       margin: 0 1rem;
     }
 
+.cssnext-Center { text-align: center }
+
 .cssnext-Jumbotron {
   overflow: auto;
   padding: 6rem 0;
 }
 
   .cssnext-Jumbotron + :not(.cssnext-Jumbotron) { margin: 1.5625rem auto }
-
-  .cssnext-Jumbotron--center { text-align: center }
 
   .cssnext-Jumbotron--time { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.9), rgba(128, 83, 202, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.9), rgba(128, 83, 202, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover }
   .cssnext-Jumbotron--future { background: -webkit-linear-gradient(290deg, rgba(128, 83, 202, 0.8), rgba(49, 142, 223, 0.7)), url("assets/future.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(128, 83, 202, 0.8), rgba(49, 142, 223, 0.7)), url("assets/future.jpg") no-repeat 50% 50%/cover }

@@ -19,7 +19,7 @@
   </div>
 </header>
 
-<div class="cssnext-Jumbotron cssnext-Jumbotron--time cssnext-Jumbotron--center cssnext-Light">
+<div class="cssnext-Jumbotron cssnext-Jumbotron--time cssnext-Center cssnext-Light">
   <section class="r-Grid">
     <div class="r-Grid-cell">
       <strong class="cssnext-Jumbotron-title">Use tomorrow's CSS syntax, today.</strong>
@@ -38,7 +38,7 @@
       This is a CSS transpiler that allows you to use tomorrow's CSS syntax today.
       It transforms CSS specs that are not yet implemented in popular browsers into more compatible CSS.
 
-      <strong class="cssnext-Section-highlight">You should understand that you can code directly in CSS4+ and it will be transformed to CSS3.</strong>
+      <strong class="cssnext-Section-highlight">You can code in CSS4+ and it will be transformed to CSS3.</strong>
 
       This is not a classic CSS preprocessor, but can replace one.
       You can use variables (by using custom property syntax, limited to top-level :root) with math.
@@ -47,7 +47,7 @@
       You can also forget about vendor prefixes.
       There is also some others stuff included and others that will be, when the specifications evolve.
 
-      <em class="cssnext-Section-highlight">You can basically write future-proof code today and forget old preprocessor specific syntax.</em>
+      <em class="cssnext-Section-highlight">You can literally write future-proof code today and forget old preprocessor specific syntax.</em>
     </p>
   </div>
 </section>
@@ -128,7 +128,7 @@
       <h3 class="cssnext-Section-title">Future-proof code</h3>
       <p class="cssnext-Section-content">
         In a near future, browsers will implement new CSS specifications. As time goes, cssnext will remove some transformations that won't be necessary anymore.
-        And maybe one day, you will be able to completely remove cssnext from your workflow without touching your actual CSS.
+        And maybe one day, you will be able to completely remove cssnext from your workflow without touching your CSS.
       </p>
     </div>
   </div>
@@ -142,7 +142,8 @@
         cssnext uses <a href="https://github.com/postcss/postcss">postcss 3</a>
         which has
         <a href="https://github.com/postcss/postcss/releases/tag/3.0.0">the fastest css parser</a>.
-        It's faster than rework (so Myth that use Rework, postcss 2 &amp; Rework again). And it's also faster than Sass and other similar tools.
+        <br />
+        It's a bit faster than libsass or less and way more faster than Myth or original ruby Sass.
       </p>
     </div>
   </div>
@@ -181,6 +182,8 @@
         Bugfixes are pushed often.
         Minor changes won't break your code.
         Major releases are, well, major and are not supposed to happen a lot.
+        <br />
+        Codebase is exploded into smart and standalone packages so it's easier to work on something or fix a bug.
       </p>
     </div>
   </div>
@@ -190,17 +193,17 @@
   <div class="r-Grid-cell cssnext-INeedSpace">
     <h2 class="cssnext-Section-title">How to use cssnext ?</h2>
     <p class="cssnext-Section-content">
-      <a href="https://www.npmjs.org/package/cssnext">cssnext is available on npm</a>.
+      cssnext is available on
+      <a title="github.com/cssnext/cssnext" href="https://github.com/cssnext/cssnext">github</a>
+      and <a href="https://www.npmjs.org/package/cssnext">npm</a>.
       The package offers <a href="https://github.com/cssnext/cssnext#cli">a CLI</a> and
       <a href="https://github.com/cssnext/cssnext#nodejs-api">a Node.js API</a>.
+      <br />
+      <em>We don't recommand global installation (<code>-g</code>).</em>
 
-      <pre><code>$ npm install cssnext</code></pre>
+      <pre class="cssnext-Center"><code>$ npm install cssnext</code></pre>
 
-      You can get the package by installing it locally or globally (using install <code>-g</code> option).
-
-      <br /><br />
-      You can also just use it in your development workflow using plugins or apps:
-      <br /><br />
+      <p>You can also just use it in your development workflow using plugins or apps:</p>
       <div class="cssnext-Tools">
         <a href="https://github.com/cssnext/grunt-cssnext">grunt</a>
         ,
@@ -218,7 +221,7 @@
   </div>
 </section>
 
-<div class="cssnext-Jumbotron cssnext-Jumbotron--doit cssnext-Jumbotron--center cssnext-Light">
+<div class="cssnext-Jumbotron cssnext-Jumbotron--doit cssnext-Center cssnext-Light">
   <section class="r-Grid">
     <div class="r-Grid-cell">
       <div class="cssnext-Jumbotron-title">
@@ -228,7 +231,7 @@
   </section>
 </div>
 
-<section class="cssnext-Jumbotron cssnext-Jumbotron--center">
+<section class="cssnext-Jumbotron cssnext-Center">
   <div class="r-Grid">
     <div class="r-Grid-cell">
       Follow <a href="https://twitter.com/cssnext">@cssnext</a> to get the latest news or <a href="irc://irc.freenode.net/cssnext">join #cssnext on irc.freenode.net</a> if you have any questions.
@@ -236,12 +239,13 @@
   </div>
 </section>
 
-<div class="cssnext-Jumbotron cssnext-Jumbotron--mysterious cssnext-Jumbotron--center cssnext-Light">
+<div class="cssnext-Jumbotron cssnext-Jumbotron--mysterious cssnext-Center cssnext-Light">
   <section class="r-Grid">
     <div class="r-Grid-cell">
       <div class="cssnext-Jumbotron-title cssnext-Jumbotron-title--smaller">
-        <a href="https://cssrecipes.github.io/">Check out cssrecipes, components based on cssnext</a>
+        <a href="https://cssrecipes.github.io/">Check out cssrecipes, components working with cssnext</a>
       </div>
+      <small>You can also check <a href="https://suitcss.github.io/">suitcss</a> that should work as well.</small>
     </div>
   </section>
 </div>
