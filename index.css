@@ -690,8 +690,6 @@ th {
   bottom: 0;
   left: 0;
 
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 1px, transparent 1px) 0 0 / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.16749999999999998), transparent 1px) 0 0.78125rem / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 0.39063rem / 100% 1.5625rem, -webkit-linear-gradient(top, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 1.17188rem / 100% 1.5625rem;
-
   background: linear-gradient(to bottom, rgba(0, 0, 0, .25) 1px, transparent 1px) 0 0 / 100% 1.5625rem,
     linear-gradient(to bottom, rgba(0, 0, 0, 0.16749999999999998), transparent 1px) 0 0.78125rem / 100% 1.5625rem,
     linear-gradient(to bottom, rgba(0, 0, 0, 0.08499999999999999), transparent 1px) 0 0.39063rem / 100% 1.5625rem,
@@ -1368,8 +1366,7 @@ a:visited {
         -ms-transform: scaleX(.85) translateY(.1rem);
 
             transform: scaleX(.85) translateY(.1rem);
-    -webkit-transition: .2s;
-            transition: .2s;
+    transition: .2s;
   }
   a:hover::before {
     opacity: 0.75;
@@ -1439,13 +1436,13 @@ h3 {
 
   .cssnext-Jumbotron + :not(.cssnext-Jumbotron) { margin: 1.5625rem auto }
 
-  .cssnext-Jumbotron--time { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.9), rgba(128, 83, 202, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.9), rgba(128, 83, 202, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--future { background: -webkit-linear-gradient(290deg, rgba(128, 83, 202, 0.8), rgba(49, 142, 223, 0.7)), url("assets/future.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(128, 83, 202, 0.8), rgba(49, 142, 223, 0.7)), url("assets/future.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--fast { background: -webkit-linear-gradient(290deg, rgba(211, 231, 248, 0.9), rgba(226, 216, 243, 0.9)), url("assets/fast.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(211, 231, 248, 0.9), rgba(226, 216, 243, 0.9)), url("assets/fast.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--flux { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.9)), url("assets/flux.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.9)), url("assets/flux.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--run { background: -webkit-linear-gradient(290deg, rgba(226, 216, 243, 0.8), rgba(211, 231, 248, 0.8)), url("assets/run.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(226, 216, 243, 0.8), rgba(211, 231, 248, 0.8)), url("assets/run.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--doit { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.6)), url("assets/doit.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.6)), url("assets/doit.jpg") no-repeat 50% 50%/cover }
-  .cssnext-Jumbotron--mysterious { background: -webkit-linear-gradient(290deg, rgba(49, 142, 223, 0.7), rgba(70, 195, 64, 0.6)), url("assets/mysterious.jpg") no-repeat 50% 50%/cover; background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(70, 195, 64, 0.6)), url("assets/mysterious.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--time { background: linear-gradient(160deg, rgba(49, 142, 223, 0.9), rgba(128, 83, 202, 0.9)), url("assets/time.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--future { background: linear-gradient(160deg, rgba(128, 83, 202, 0.8), rgba(49, 142, 223, 0.7)), url("assets/future.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--fast { background: linear-gradient(160deg, rgba(211, 231, 248, 0.9), rgba(226, 216, 243, 0.9)), url("assets/fast.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--flux { background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.9)), url("assets/flux.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--run { background: linear-gradient(160deg, rgba(226, 216, 243, 0.8), rgba(211, 231, 248, 0.8)), url("assets/run.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--doit { background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(128, 83, 202, 0.6)), url("assets/doit.jpg") no-repeat 50% 50%/cover }
+  .cssnext-Jumbotron--mysterious { background: linear-gradient(160deg, rgba(49, 142, 223, 0.7), rgba(70, 195, 64, 0.6)), url("assets/mysterious.jpg") no-repeat 50% 50%/cover }
 
   .cssnext-Jumbotron-title {
     display: block;
