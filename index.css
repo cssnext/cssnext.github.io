@@ -1406,7 +1406,7 @@ h3 {
 .cssnext-Icon {
   display: inline-block;
 
-  /*width: 1em;*/
+  width: 1.2em; /* required for IE */
   height: 1.2em;
   line-height: 1;
   vertical-align: middle;
