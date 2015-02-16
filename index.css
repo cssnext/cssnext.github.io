@@ -1420,8 +1420,13 @@ h3 {
           transform: translate3d(0,0,0); /* fix webkit/blink poor rendering issues */
 }
 
-.cssnext-Body {
-  padding-top: 4.6875rem;
+.r-VerticalRhythm {font-size: .8333rem}
+@media (min-width: 50.01em) {
+  .r-VerticalRhythm {font-size: 1rem}
+}
+
+@media (min-width: 50.01em) {
+  .cssnext-Body {padding-top: 4.6875rem}
 }
 
 .cssnext-Header {
@@ -1429,12 +1434,17 @@ h3 {
   /*text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
   line-height: 4.6875rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  z-index: 1; /* on top of position relative <a> */
+}
+
+@media (min-width: 50.01em) {
+  .cssnext-Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1; /* on top of position relative <a> */
+  }
 }
 
   .cssnext-Logo {}
@@ -1445,13 +1455,10 @@ h3 {
       vertical-align: middle;
     }
 
-  .cssnext-Nav {
-    text-align: right;
-  }
+  @media (min-width: 50.01em) {
+    .cssnext-Nav {text-align: right}}
 
-    .cssnext-Nav a {
-      margin: 0 1rem;
-    }
+    .cssnext-Nav a {margin: 0 1rem}
 
 .cssnext-Center { text-align: center }
 
